@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utshaav</title>
 </head>
 <body>
-    <img src="0.png" id="Images" style="height: 30px ; width: 30px; float: left;"> <p id="type" style="float: left; padding-top: 10px; padding-left: 10px ;"></p>
+    <img src="images/0.png" id="Images" style="height: 30px ; width: 30px; float: left;"> <p id="type" style="float: left; padding-top: 10px; padding-left: 10px ;"></p>
     <div class="container">
         <p> I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p><br><br>
         <span id="socialMedia"></span>
     </div>    
 
-    <script src="main.js" ></script>
-    <script src="typeit.min.js"></script>
+    <script src="src/main.js" ></script>
+    <script src="src/typeit.min.js"></script>
     <!-- <script src="/typeit.js"></script> -->
     <script>
         new TypeIt("#type", {
@@ -32,7 +32,8 @@
             var len = 6                                      //limit
             setInterval(function(){                           //interval changer
                 num = (num === len) ? 0 : num;                //reset if limit reached
-                rotator.src = num + '.png';                     //change picture
+                rotator.src = 'images/' + num + '.png';                     //change picture
+                console.log(rotator.src)
                 num++;                                        //increment counter
             }, delayInSeconds * 1000);
             }());
