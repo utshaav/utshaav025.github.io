@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 * {
   margin: 0;
@@ -6,21 +6,21 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #000;
   color: #eee;
 }
 
-#Images{
-  height: 30px ;
+#Images {
+  height: 30px;
   width: 30px;
   float: left;
 }
 
-#type{
+#type {
   float: left;
   padding-top: 10px;
-  padding-left: 10px ;
+  padding-left: 10px;
 }
 .container {
   height: 100vh;
@@ -51,9 +51,19 @@ body {
   animation: none;
 }
 @keyframes blink {
-  0%  { background-color: #ccc; }
-  49% { background-color: #ccc; }
-  50% { background-color: transparent; }
-  99% { background-color: transparent; }
-  100%  { background-color: #ccc; }
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
