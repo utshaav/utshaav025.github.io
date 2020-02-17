@@ -10,6 +10,18 @@ body {
   background-color: #000;
   color: #eee;
 }
+
+#Images{
+  height: 30px ;
+  width: 30px;
+  float: left;
+}
+
+#type{
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px ;
+}
 .container {
   height: 100vh;
   display: flex;

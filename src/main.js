@@ -39,3 +39,24 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+new TypeIt("#type", {
+  strings: ["utshaav","utshaav_","uk_025","utshaav","utshaav025","utshaav_025"] ,
+  breakLines: false,
+  loop:true,
+  nextStringDelay: 5000,
+  loopDelay: 5000,
+  }).go();
+
+(function() {
+    var rotator = document.getElementById('Images') //get the element
+    var delayInSeconds = 6                        //delay in seconds
+    var num = 1                                      //start number
+    var len = 6                                      //limit
+    setInterval(function(){                           //interval changer
+        num = (num === len) ? 0 : num;                //reset if limit reached
+        rotator.src = 'images/' + num + '.png';                     //change picture
+        console.log(rotator.src)
+        num++;                                        //increment counter
+    }, delayInSeconds * 1000);
+    }());
