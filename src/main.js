@@ -64,14 +64,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
   (function() {
     var rotator = document.getElementById("Images"); //get the element
+    var anchor = document.getElementById("links");
     var delayInSeconds = 6; //delay in seconds
     var num = 1; //start number
     var len = 6; //limit
+    var lin = [
+      "https://www.facebook.com/utshaav",
+      "https://www.instagram.com/utshaav_/",
+      "https://twitter.com/uk_025",
+      "https://www.linkedin.com/in/utshaav",
+      "https://github.com/utshaav025",
+      "#",
+    ];
     setInterval(function() {
       //interval changer
       num = num === len ? 0 : num; //reset if limit reached
       rotator.src = "images/" + num + ".png"; //change picture
-      console.log(rotator.src);
+      anchor.setAttribute('href', lin[num]);
+      console.log(rotator.href);
       num++; //increment counter
     }, delayInSeconds * 1000);
   })();
