@@ -58,14 +58,14 @@ document.addEventListener("DOMContentLoaded", function() {
     ],
     breakLines: false,
     loop: true,
-    nextStringDelay: 5000,
+    nextStringDelay: 4500,
     loopDelay: 5000
   }).go();
 
   (function() {
     var rotator = document.getElementById("Images"); //get the element
     var anchor = document.getElementById("links");
-    var delayInSeconds = 6; //delay in seconds
+    var delayInSeconds = 5.6; //delay in seconds
     var num = 1; //start number
     var len = 6; //limit
     var lin = [
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
       num = num === len ? 0 : num; //reset if limit reached
       rotator.src = "images/" + num + ".png"; //change picture
       anchor.setAttribute('href', lin[num]);
-      console.log(rotator.href);
+      // console.log(rotator.href);
       num++; //increment counter
     }, delayInSeconds * 1000);
   })();
