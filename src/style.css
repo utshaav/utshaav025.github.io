@@ -56,7 +56,7 @@ body {
 .next{
   z-index: 1;
   float: right;
-  height: 99vh;
+  height: 100vh;
   width: 60px;
   position: absolute;  
   top: 0;
