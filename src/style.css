@@ -23,10 +23,11 @@ body {
   padding-left: 10px;
 }
 .container {
-  height: 100vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
   /* position: absolute; */
 }
 .container p {
@@ -55,7 +56,7 @@ body {
 .next{
   z-index: 1;
   float: right;
-  height: 100vh;
+  height: 99vh;
   width: 60px;
   position: absolute;  
   top: 0;
