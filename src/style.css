@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* position: absolute; */
 }
 .container p {
   font-size: 3rem;
@@ -49,6 +50,24 @@ body {
 }
 .container p span.cursor.typing {
   animation: none;
+}
+
+.next{
+  z-index: 1;
+  float: right;
+  height: 100vh;
+  width: 60px;
+  position: absolute;  
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next:hover{
+  opacity: 30%;
+  background-color: gray;
 }
 @keyframes blink {
   0% {

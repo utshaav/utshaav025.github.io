@@ -56,16 +56,17 @@ document.addEventListener("DOMContentLoaded", function() {
       "utshaav025",
       "utshaav_025"
     ],
+    startDelay: 200,
     breakLines: false,
     loop: true,
-    nextStringDelay: 4500,
+    nextStringDelay: 5000,
     loopDelay: 5000
   }).go();
 
   (function() {
     var rotator = document.getElementById("Images"); //get the element
     var anchor = document.getElementById("links");
-    var delayInSeconds = 5.6; //delay in seconds
+    var delayInSeconds = 6; //delay in seconds
     var num = 1; //start number
     var len = 6; //limit
     var lin = [
